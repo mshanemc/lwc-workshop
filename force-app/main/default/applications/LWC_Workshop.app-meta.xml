@@ -10,6 +10,7 @@
     <label>LWC Workshop</label>
     <navType>Standard</navType>
     <tabs>Toast</tabs>
+    <tabs>ContactList</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LWC_Workshop_UtilityBar</utilityBar>
 </CustomApplication>

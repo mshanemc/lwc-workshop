@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Contacts" icon-name="standard:contact">
+        <div class="slds-p-around_medium">
+            <template if:true={contacts.data}>
+                <template for:each={contacts.data} for:item="contact">
+                    <li key={contact.Id}>
+                        {contact.Id}
+                    </li>
+                </template>
+            </template>
+            <template if:true={contacts.error}>
+                Error: {contacts.error}
+            </template>
+        </div>
+    </lightning-card>
+</template>

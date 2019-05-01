@@ -7,6 +7,12 @@
             ],
             "c/moment": [
                 "moment/moment.js"
+            ],
+            "c/ContactList": [
+                "ContactList/ContactList.js"
+            ],
+            "c/contactList": [
+                "contactList/contactList.js"
             ]
         },
         "experimentalDecorators": true
