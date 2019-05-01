@@ -13,6 +13,9 @@
             ],
             "c/contactList": [
                 "contactList/contactList.js"
+            ],
+            "c/contactCard": [
+                "contactCard/contactCard.js"
             ]
         },
         "experimentalDecorators": true
