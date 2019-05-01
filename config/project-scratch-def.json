@@ -1,5 +1,6 @@
 {
   "orgName": "lwc-workshop",
+  "hasSampleData": true,
   "edition": "Developer",
   "settings": {
     "orgPreferenceSettings": {
