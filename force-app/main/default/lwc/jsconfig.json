@@ -1,6 +1,23 @@
 {
     "compilerOptions": {
         "baseUrl": ".",
-        "paths": {}
+        "paths": {
+            "c/toastDemo": [
+                "toastDemo/toastDemo.js"
+            ],
+            "c/moment": [
+                "moment/moment.js"
+            ]
+        },
+        "experimentalDecorators": true
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
     }
 }

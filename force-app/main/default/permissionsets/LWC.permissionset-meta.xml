@@ -6,4 +6,8 @@
     </applicationVisibilities>
     <hasActivationRequired>false</hasActivationRequired>
     <label>LWC</label>
+    <tabSettings>
+        <tab>X1_Toast</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
 </PermissionSet>

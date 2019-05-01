@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/mshanemc/lwc-workshop",
   "devDependencies": {
+    "eslint": "^5.16.0",
     "nodemon": "^1.18.3"
   }
 }
