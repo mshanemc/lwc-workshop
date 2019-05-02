@@ -1,0 +1,14 @@
+<template>
+    <template if:true={contact.data}>
+        <lightning-card title={contact.data.fields.Name.value} icon-name="standard:contact">
+            <div class="slds-m-around_medium">
+                <p class="contact-title">{contact.data.fields.Title.value}</p>
+                <p><lightning-formatted-phone value={contact.data.fields.Phone.value}></lightning-formatted-phone></p>
+                <p><lightning-formatted-email value={contact.data.fields.Email.value}></lightning-formatted-email></p>
+            </div>                
+        </lightning-card>
+    </template>
+    <template if:false={contact.data}>
+        <div class="error">No data</div>
+    </template>
+</template>

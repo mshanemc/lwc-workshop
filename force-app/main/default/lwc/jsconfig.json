@@ -2,20 +2,17 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "c/toastDemo": [
-                "toastDemo/toastDemo.js"
+            "c/brokenComponent": [
+                "brokenComponent/brokenComponent.js"
             ],
-            "c/moment": [
-                "moment/moment.js"
-            ],
-            "c/ContactList": [
-                "ContactList/ContactList.js"
+            "c/contactCard": [
+                "contactCard/contactCard.js"
             ],
             "c/contactList": [
                 "contactList/contactList.js"
             ],
-            "c/contactCard": [
-                "contactCard/contactCard.js"
+            "c/toastDemo": [
+                "toastDemo/toastDemo.js"
             ]
         },
         "experimentalDecorators": true

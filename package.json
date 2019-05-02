@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "sfdx shane:org:delete; ./orgInit.sh",
+    "test:unit": "lwc-jest",
+    "test:unit:watch": "lwc-jest --watch",
+    "test:unit:debug": "lwc-jest --debug",
     "reset": "echo \"sfdx force:apex:execute -f scripts/dataWipe.cls && sfdx force:apex:execute -f scripts/init.cls\""
   },
   "nodemonConfig": {
@@ -26,6 +28,7 @@
   },
   "homepage": "https://github.com/mshanemc/lwc-workshop",
   "devDependencies": {
+    "@salesforce/lwc-jest": "^0.4.13",
     "eslint": "^5.16.0",
     "nodemon": "^1.18.3"
   }

@@ -1,0 +1,27 @@
+import { createElement } from 'lwc';
+import ContactCard from 'c/brokenComponent';
+import { getRecord } from 'lightning/uiRecordApi';
+import { registerLdsTestWireAdapter } from '@salesforce/wire-service-jest-util';
+import * as fakeData from './data/contactMock.json';
+
+describe('@wire demonstration test', () => {
+    const getRecordWireAdapter = registerLdsTestWireAdapter(getRecord);
+
+    it('displays the correct title field', () => {
+        const element = createElement('c-broken-component', { is: ContactCard });
+        document.body.appendChild(element);
+
+        getRecordWireAdapter.emit(fakeData);
+
+        return Promise.resolve().then(() => {
+            const contactTitle = element.shadowRoot.querySelector('.contact-title');
+            expect(contactTitle).toBeTruthy();
+            expect(contactTitle.textContent).toBe('CEO');
+        });        
+    });
+    afterEach(() => {
+        while (document.body.firstChild) {
+            document.body.removeChild(document.body.firstChild);
+        }
+    });
+});
