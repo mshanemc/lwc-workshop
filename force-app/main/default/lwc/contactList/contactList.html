@@ -3,7 +3,9 @@
         <div class="slds-p-around_medium">
             <template if:true={contacts.data}>
                 <template for:each={contacts.data} for:item="contact">
-                    <c-contact-card record-id={contact.Id} key={contact.Id}></c-contact-card>                    
+                    <li key={contact.Id}>
+                        {contact.Id}
+                    </li>                   
                 </template>
             </template>
             <template if:true={contacts.error}>

@@ -1,5 +1,4 @@
-import { LightningElement, api, wire } from 'lwc';
-import { getRecord } from 'lightning/uiRecordApi';
+import { LightningElement, api } from 'lwc';
 
 const FIELDS = [
     'Contact.Name',
@@ -11,7 +10,6 @@ const FIELDS = [
 export default class ContactCard extends LightningElement {
     @api recordId;
 
-    @wire(getRecord, { recordId: '$recordId', fields: FIELDS })
-    contact;
+    
     
 }

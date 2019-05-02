@@ -1,8 +1,6 @@
-import { LightningElement, wire } from 'lwc';
-import getContacts from '@salesforce/apex/getContacts.getContacts';
+import { LightningElement } from 'lwc';
 
 export default class ContactList extends LightningElement {
 
-    @wire(getContacts, {})
-    contacts;
+    
 }

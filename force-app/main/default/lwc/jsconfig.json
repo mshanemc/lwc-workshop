@@ -13,6 +13,9 @@
             ],
             "c/toastDemo": [
                 "toastDemo/toastDemo.js"
+            ],
+            "c/ContactList": [
+                "ContactList/ContactList.js"
             ]
         },
         "experimentalDecorators": true
