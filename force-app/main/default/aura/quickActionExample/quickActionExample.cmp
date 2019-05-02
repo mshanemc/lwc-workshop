@@ -1,4 +1,3 @@
 <aura:component implements="force:lightningQuickAction">
-    <c:contactList/>
 
 </aura:component>	
