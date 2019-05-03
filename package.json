@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "build": "sfdx shane:org:delete; ./orgInit.sh",
-    "test:unit": "lwc-jest",
-    "test:unit:watch": "lwc-jest --watch",
+    "test:unit": "lwc-jest -- --silent",
+    "test:unit:watch": "lwc-jest --watch -- --silent",
     "test:unit:debug": "lwc-jest --debug",
     "reset": "echo \"sfdx force:apex:execute -f scripts/dataWipe.cls && sfdx force:apex:execute -f scripts/init.cls\""
   },
