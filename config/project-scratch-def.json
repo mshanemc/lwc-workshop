@@ -8,7 +8,8 @@
       "networksEnabled": false,
       "s1DesktopEnabled": true,
       "pathAssistantsEnabled": true,
-      "s1EncryptedStoragePref2": false
+      "s1EncryptedStoragePref2": false,
+      "selfSetPasswordInApi": true
     }
   }
 }
