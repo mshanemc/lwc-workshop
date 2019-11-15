@@ -1,6 +1,3 @@
 import { LightningElement } from 'lwc';
 
-export default class ContactList extends LightningElement {
-
-    
-}
+export default class ContactList extends LightningElement {}
